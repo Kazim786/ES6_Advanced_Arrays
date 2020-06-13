@@ -51,9 +51,27 @@ const mappedArr = array.map((num) => {
 })
 
 //Filter the array to only include users who are on team: red
-
+const filtered = array.filter((num) => {
+  
+  return num.team === "red"
+  
+})
 
 //Find out the total score of all users using reduce
+
+const total = array.reduce((a, user) => {
+return user.score + a
+}, 0)
+
+console.log(total) 
+
+//Did reduce by myself *Cool face*
+
+
+
+
+
+
 
 // (1), what is the value of i?
 // (2), Make this map function pure:
