@@ -46,8 +46,10 @@ array.forEach((user) => {
 
 const mappedArr = array.map((num) => {
   let {username} = num
+  //pulling username using destructuring out of the array of objects
   username = username + "?"
   return username
+  //now new Array => mappedArr will have username that is followed with ?
 })
 
 //Filter the array to only include users who are on team: red
