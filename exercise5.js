@@ -62,6 +62,7 @@ const filtered = array.filter((num) => {
 //Find out the total score of all users using reduce
 
 const total = array.reduce((a, user) => {
+  console.log(a) //Do this to see how accumulator works
 return user.score + a
 }, 0) 
 //accumulator takes in the current value that it is given, 
