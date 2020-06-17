@@ -63,7 +63,14 @@ const filtered = array.filter((num) => {
 
 const total = array.reduce((a, user) => {
 return user.score + a
-}, 0) //accumulator takes in the current value that it is given, in this case 0. Then each time it iterates and adds on accumulates whatever the call back return value is added onto it.
+}, 0) 
+//accumulator takes in the current value that it is given, 
+//in this case 0. Then each time it iterates and adds on (accumulates)
+// whatever the call back return value is added onto it.
+//For instance first the value of accumulator is 0. But when you add user.score which is 5 to it. 
+//Accumulator becomes 5 too as it takes on the call back return value.
+//Then when you add user.score again which has the value of 10 to accumulator which is 5. The call back return value becomes 15 and is thus also the value of the accumulator.
+//This process keeps repeating until all numbers are added
 
 console.log(total) 
 
