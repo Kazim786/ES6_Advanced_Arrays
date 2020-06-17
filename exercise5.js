@@ -63,7 +63,7 @@ const filtered = array.filter((num) => {
 
 const total = array.reduce((a, user) => {
 return user.score + a
-}, 0)
+}, 0) //accumulator takes in the current value that it is given, in this case 0. Then each time it iterates and adds on accumulates whatever value is added onto it.
 
 console.log(total) 
 
